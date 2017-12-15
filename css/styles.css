@@ -1,6 +1,9 @@
 .jumbotron {
+  padding: 50px;
   text-align: center;
-  url("")
+  background-image: url("http://tocadamangava.com.br/wp-content/uploads/2015/08/pizza.jpg");
+  color: white;
+  font-size: 250%;
 }
 
 body {
@@ -12,15 +15,20 @@ h1 {
   font-family: monospace;
 }
 
+#h3OrderDetails {
+  font-size: 40px;
+  margin: 10px;
+}
+
 #toppings {
    font-size: 17px;
  }
 
  #showOrderDetails {
    display: none;
-   background-color: #A2BB5F
+   background-color: #afb7a1
  }
- 
+
 .btn {
   padding: 10px;
   border: 10px;
@@ -34,4 +42,8 @@ h1 {
 .sendtoHtml:hover {
   text-decoration: underline;
   column-rule-color: grey;
+}
+li {
+  font-weight: bold;
+  margin-left: 25px;
 }

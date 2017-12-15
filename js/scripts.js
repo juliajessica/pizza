@@ -1,6 +1,7 @@
 //business logic
 var veggie = 10;
 var meat = 12;
+var xlmeat = 15;
 
 function PizzaOptions(size, topping) {
   this.size = size;
@@ -10,12 +11,23 @@ function PizzaOptions(size, topping) {
 
 PizzaOptions.prototype.pizzaOptionsPrototype = function() {
 
-  if(this.topping === "Pepperoni") {
+  if(this.topping === "Pepperoni" || this.topping === "Meatballs") {
     var chosenToppings = meat;
   } else {
     var chosenToppings = veggie;
   }
+  if(this.size === "Family-Size") {
+    var chosenToppings = meat;
+  } else {
+    var chosenToppings = veggie;
+  }
+  if(this.size === "Family-Size" && this.topping === "Pepperoni" || this.size === "Family-Size" && this.topping === "Meatballs") {
+    var chosenToppings = xlmeat;
+  } else {
+    var chosenTopping = veggie;
+  }
   return chosenToppings;
+
 
   // return this.size + " " + this.topping;
 }
@@ -47,7 +59,7 @@ $(document).ready(function() {
     $("#showOrderDetails").append("your price is: " + "$" + orderfinal);
     $(".sendtoHtml").last().click(function() {
     $("#showOrderDetails").fadeIn();
-    // $("#showOrderDetails h4").text(newPizzaOrder.size);
+    // $("#showOrderDetails h4").text("newPizzaOrder.size");
     $(".outputSize").text(newPizzaOrder.size);
     $(".outputToppings").text(newPizzaOrder.topping);
     $(".price").text(finalPrice);

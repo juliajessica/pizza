@@ -12,7 +12,7 @@
       <div class="jumbotron">
         <h1>Pip's Pies</h1>
       </div>
-        <h3>Place your order:</h3>
+        <h3 id="orderh3">Place your order:</h3>
       </br>
       <div class="row">
         <form id="pizzaForm">
@@ -27,10 +27,10 @@
             </div> -->
             <h4>What size would you like to order:</h4>
               <select class="form-control" id="pizzaSize">
-                <option value="small">Small</option>
-                <option value="medium">Medium</option>
-                <option value="large">Large</option>
-                <option value="familySize">Family-Size</option>
+                <option value="Small">Small</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
+                <option value="Family-Size">Family-Size</option>
               </select>
           </div><!--close column-->
           <br>
@@ -39,17 +39,22 @@
             <h4>Choose your toppings:</h4>
             <label for="pepperoni">Pepperoni &ensp;</label>
             <input type="checkbox" name="userToppingChoice" value="Pepperoni" name="action">&emsp;
+            <label for="meatballs">Meatballs &ensp;</label>
+            <input type="checkbox" name="userToppingChoice" value="Meatballs" name="action">&emsp;
             <label for="mushrooms">Mushrooms &ensp;</label>
             <input type="checkbox" name="userToppingChoice" value="Mushroom" name="action">&emsp;
             <label for="roastedRedPeppers">Roasted Red Peppers &ensp;</label>
             <input type="checkbox" name="userToppingChoice" value="RoastedRedPeppers" name="action">&emsp;
             <label for="grilledOnions">Grilled Onions &ensp;</label>
             <input type="checkbox" name="userToppingChoice" value="GrilledOnions" name="action">&emsp;
-          </br>
-          <center><button type="submit" class="btn btn-warning">Place My Order!</button></center>
+            <label for="blackolives">Black Olives &ensp;</label>
+            <input type="checkbox" name="userToppingChoice" value="BlackOlives" name="action">&emsp;
+          <p></p>
+          <button type="submit" class="btn btn-warning">Place My Order!</button>
           </div><!--close column-->
         </form><!--close form-->
-      <h3><center>Click below to check your order details:</h3></center>
+        <p></p>
+        <h3>Click below to check your order details:</h3>
         <ul id="showOrderDetails">
         </ul>
       </div><!--close row-->
@@ -58,8 +63,8 @@
           <h3>Confirm Order Details:</h3>
             <h4></h4>
       <!-- <li> for name-->
-            <li>Size:<span class="outputSize"></span></li>
-            <li>Toppings:<span class="outputToppings"><span></li>
+            <li>Size: <span class="outputSize"></span></li>
+            <li>Toppings: <span class="outputToppings"><span></li>
             <li>Price $<strong><span class="price"></strong></li>
         </div>
       </div>
