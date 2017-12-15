@@ -1,4 +1,4 @@
-# _Pig Dice_
+# _Pizza Company_
 
 #### _Friday Project Assignment for Epicodus_
 
@@ -6,7 +6,7 @@
 
 ## Description
 
-_This webpage is meant to display the use of BDD using constructors, and objects through backend logic and user interface._
+_This Pizza webpage is meant to display the use of BDD using constructors, and object-oriented JavaScript through backend logic and user interface._
 
 ### Specs
 | Behavior | Input | Output |
@@ -32,6 +32,7 @@ _Feel free to email me at [juliajessicasher@gmail.com](mailto:juliajessicasher@g
 * _HTML_
 * _CSS_
 * _Bootstrap_
+* _JavaScript_
 * _jQuery_
 * _Git_
 * _GitHub_
