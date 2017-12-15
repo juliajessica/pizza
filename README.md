@@ -11,12 +11,12 @@ _This Pizza webpage is meant to display the use of BDD using constructors, and o
 ### Specs
 | Behavior | Input | Output |
 | :-------------     | :------------- | :------------- |
-| can return a random number | 2 | 2 |
-| can can return specific behavior after number is generated | 6 | 6 |
-| can return two separate results | roll 1 | turn score: 0, total score: 2 |
-| returns message if number rolled equals 1 | roll 1 | "no points received" |
-| can assign value to separate player | roll:4 | player 1: 4 |
-| can return result when total score = 40 | 40 | "we have a winner!" |
+| can return a random result | cheese | cheese |
+| can can return specific behavior after selection is made | "pepperoni" | "pepperoni pizza" |
+| can return two separate results | "pepperoni" "large" | "large pepperoni pizza" |
+| can return result when total selection is made | "pepperoni" "mushrooms" "large" | "large mushroom pepperoni pizza" |
+| returns message when specific behavior is made | "pepperoni" "large" | "Your ordered: large pepperoni pizza" |
+
 
 ## Setup/Installation Requirements
 
