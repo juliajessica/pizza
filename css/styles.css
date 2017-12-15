@@ -16,20 +16,22 @@ h1 {
    font-size: 17px;
  }
 
- #show-order {
+ #showOrderDetails {
    display: none;
+   background-color: #A2BB5F
  }
+ 
+.btn {
+  padding: 10px;
+  border: 10px;
+}
 
- .sendtoHtml {
+.sendtoHtml {
   cursor: pointer;
   color: #0088cc;
 }
 
 .sendtoHtml:hover {
   text-decoration: underline;
-}
-
-.btn {
-  padding: 10px;
-  border: 10px;
+  column-rule-color: grey;
 }
