@@ -25,23 +25,31 @@
               <option value="familySize">Family-Size</option>
             </select>
           </div><!--close column-->
-          </br>
-          </br>
-          <div class="col-lg-12">
-            <h4>Choose your toppings:</h4>
-            <label for="pepperoni" id="toppings">Pepperoni &ensp;</label>
-            <input type="checkbox" value="pepperoni">&emsp;
-            <label for="mushrooms" id="toppings">Mushrooms &ensp;</label>
-            <input type="checkbox" value="mushroom">&emsp;
-            <label for="roastedRedPeppers" id="toppings">Roasted Red Peppers &ensp;</label>
-            <input type="checkbox" value=roastedRedPeppers"">&emsp;
-            <label for="grilledOnions" id="toppings">Grilled Onions &ensp;</label>
-            <input type="checkbox" value="grilledOnions">&emsp;
-          </div><!--close column-->
+        </br>
+      </br>
+        <div class="col-lg-12" id="toppingSelection">
+          <h4>Choose your toppings:</h4>
+          <label for="pepperoni" id="toppings">Pepperoni &ensp;</label>
+          <input type="checkbox" value="pepperoni">&emsp;
+          <label for="mushrooms" id="toppings">Mushrooms &ensp;</label>
+          <input type="checkbox" value="mushroom">&emsp;
+          <label for="roastedRedPeppers" id="toppings">Roasted Red Peppers &ensp;</label>
+          <input type="checkbox" value=roastedRedPeppers"">&emsp;
+          <label for="grilledOnions" id="toppings">Grilled Onions &ensp;</label>
+          <input type="checkbox" value="grilledOnions">&emsp;
+        </div><!--close column-->
         </br>
         <button type="submit" class="btn btn-warning">Place My Order!</button>
         </div><!--close row-->
       </form><!--close form-->
+    </br>
+    <div class="col-lg-12">
+      <ul id="orderDetails">
+      <h3>Order Details:</h3>
+      <!-- <li> -->
+      <li>Size:<span class="outputSize"></span></li>
+      <li>Toppings:<span class="outputToppings"><span></li>
+      <!--add price-->
     </div><!--close container-->
   </body>
 </html>
