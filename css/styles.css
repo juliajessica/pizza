@@ -1,6 +1,5 @@
 .jumbotron {
   text-align: center;
-  position: fixed;
   url("")
 }
 
@@ -17,6 +16,6 @@ h1 {
    font-size: 17px;
  }
 
-/*#show-contact {
-  display: none;
-}*/
+ #show-order {
+   display: none;
+ }

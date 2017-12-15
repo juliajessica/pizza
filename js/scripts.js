@@ -14,13 +14,15 @@ PizzaSize.prototype.pizzaSizePrototype = function() {
 
 PizzaToppings.prototype.pizzaToppingPrototype = function() {
   return this.topping;
+
 }
 
 
-function resetFields () {
-  $("select#pizzaSize").val("");
-  $("input#toppings").val("");
-}
+// function resetFields () {
+//   $("input#first-name").val("");
+//   // $("select#pizzaSize").val("");
+//   // $("input#toppings").val("");
+// }
 
 //user interface
 $(document).ready(function() {
@@ -44,7 +46,14 @@ $(document).ready(function() {
 
   $(".sendtoHtml").last().click(function() {
     $(this).hide().slideDown('slow'); //adding style
-    $("")
+    $("#show-order").show();
+    $(".outputSize").text(newPizzaOrderPt1.size);
+    $(".outputToppings").text(newPizzaOrderPt2.toppings);
+    // newPizzaOrderpt1.topping.forEach(function(topping) {
+    // // $("ulToppings").append("<li>" + PizzaToppings.pizzaToppingPrototype() + "</li>");
+    // //   });
+    // // });
+    // $("input#first-name").val(""); //taking in the input if the name
 
 )};
 

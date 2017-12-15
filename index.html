@@ -9,46 +9,55 @@
   </head>
   <body>
     <div class="container">
-      <form id="pizzaForm">
-        <div class="jumbotron">
-          <h1>Pip's Pies</h1>
-        </div>
-          <h3>Place your order:</h3>
-        </br>
-        <div class="row">
-          <div class="col-lg-12">
-            <h4>What size would you like to order:</h4>
-            <select class="form-control" id="pizzaSize">
-              <option value="small">Small</option>
-              <option value="medium">Medium</option>
-              <option value="large">Large</option>
-              <option value="familySize">Family-Size</option>
-            </select>
-          </div><!--close column-->
-        </br>
+      <div class="jumbotron">
+        <h1>Pip's Pies</h1>
+      </div>
+        <h3>Place your order:</h3>
       </br>
-        <div class="col-lg-12" id="toppingSelection">
-          <h4>Choose your toppings:</h4>
-          <label for="pepperoni" id="toppings">Pepperoni &ensp;</label>
-          <input type="checkbox" value="pepperoni">&emsp;
-          <label for="mushrooms" id="toppings">Mushrooms &ensp;</label>
-          <input type="checkbox" value="mushroom">&emsp;
-          <label for="roastedRedPeppers" id="toppings">Roasted Red Peppers &ensp;</label>
-          <input type="checkbox" value=roastedRedPeppers"">&emsp;
-          <label for="grilledOnions" id="toppings">Grilled Onions &ensp;</label>
-          <input type="checkbox" value="grilledOnions">&emsp;
-        </div><!--close column-->
+      <div class="row">
+        <form id="pizzaForm">
+          <div class="col-lg-12">
+            <div class="name">
+              <!--<label for="first-name">Name:</label>
+              <input type="text" class="form-control" id="first-name">
+            </div>-->
+            <h4>What size would you like to order:</h4>
+              <select class="form-control" id="pizzaSize">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="familySize">Family-Size</option>
+              </select>
+          </div><!--close column-->
+          </br>
+          </br>
+          <div class="col-lg-12" id="toppingSelection">
+            <h4>Choose your toppings:</h4>
+            <label for="pepperoni">Pepperoni &ensp;</label>
+            <input type="checkbox" id="pepperoni" value="Pepperoni" name="action">&emsp;
+            <label for="mushrooms">Mushrooms &ensp;</label>
+            <input type="checkbox" id="mushroom" value="Mushroom" name="action">&emsp;
+            <label for="roastedRedPeppers">Roasted Red Peppers &ensp;</label>
+            <input type="checkbox" id="roastedRedPeppers" value="RoastedRedPeppers" name="action">&emsp;
+            <label for="grilledOnions">Grilled Onions &ensp;</label>
+            <input type="checkbox" id="grilledOnions" value="GrilledOnions" name="action">&emsp;
+          </br>
+          <button class="btn btn-warning">Place My Order!</button>
+          </div><!--close column-->
+        </form><!--close form-->
         </br>
-        <button type="submit" class="btn btn-warning">Place My Order!</button>
-        </div><!--close row-->
-      </form><!--close form-->
-    </br>
-    <div class="col-lg-12">
-      <ul id="orderDetails">
-      <h3>Order Details:</h3>
-      <!-- <li> -->
-      <li>Size:<span class="outputSize"></span></li>
-      <li>Toppings:<span class="outputToppings"><span></li>
+      <h3>Click below to check your order details:</h3>
+        <ul id="showOrderDetails">
+        </ul>
+      </div><!--close row-->
+      <div class="col-lg-12">
+        <div id="show-order">
+          <h3>Confirm Order Details:</h3>
+      <!-- <li> for name-->
+            <li>Size:<span class="outputSize"></span></li>
+            <li>Toppings:<span class="outputToppings"><span></li>
+        </div>
+      </div>
       <!--add price-->
     </div><!--close container-->
   </body>
