@@ -1,4 +1,4 @@
-/*.jumbotron {
+.jumbotron {
   text-align: center;
   url("")
 }
@@ -11,6 +11,11 @@ h1 {
   font-size: 30px;
   font-family: monospace;
 }
+
+#toppings {
+   font-size: 17px;
+ }
+
 /*#show-contact {
   display: none;
-}*/*/
+}*/
