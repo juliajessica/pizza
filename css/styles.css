@@ -19,3 +19,17 @@ h1 {
  #show-order {
    display: none;
  }
+
+ .sendtoHtml {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+.sendtoHtml:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  padding: 10px;
+  border: 10px;
+}
