@@ -1,24 +1,23 @@
 //business logic
-// function Contact(first, last, order) {
-//   this.firstName = first;
-//   this.lastName = last;
-//   this.order = [];
-// }
+var veggie = 10;
+var meat = 12;
 
 function PizzaOptions(size) {
   this.size = size;
-  this.topping = [];
+  this.topping = ["Pepperoni", "Mushrooms", "Roasted Red Peppers", "Grilled Onions"];
 }
 
 
 PizzaOptions.prototype.pizzaOptionsPrototype = function() {
-  return this.size + " " + this.topping;
-}
 
-// PizzaToppings.prototype.pizzaToppingPrototype = function() {
-//   return this.topping;
-//
-// }
+  if(this.topping == "Pepperoni") {
+    var chosenToppings = meat;
+  } else {
+    var chosenToppings = veggie;
+  }
+  return chosenToppings;
+  // return this.size + " " + this.topping;
+}
 
 //user interface
 $(document).ready(function(event) {
