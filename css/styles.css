@@ -1,5 +1,6 @@
 .jumbotron {
   text-align: center;
+  position: fixed;
   url("")
 }
 

@@ -1,4 +1,4 @@
-# _Pizza Company_
+# _Pizzaria Form_
 
 #### _Friday Object-Oriented JavaScript Project for Epicodus_
 
