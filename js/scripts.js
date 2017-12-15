@@ -54,14 +54,22 @@ $(document).ready(function() {
       newPizzaOrder.topping.push(newPizzaorderPt2);
   });
 
+  var checkboxes = document.getElementsByName(form);////allows you to select multiple checkboxes
+  var selected = [];
+  for (var i=0; i<checkboxes.length; i++) {
+      if (checkboxes[i].checked == true) {
+          selected.push(checkboxes[i].value + ' ');
+      }
+  }
+
   $("#toppingSelection").remove(); //removes the users input
-  // $("ul#showOrderDetails").append("<li><span class='sendtoHtml'>" + newPizzaOrderPt2.pizzaToppingPrototype() + "<span><li>"); //send toppings to list
+  $("ul#showOrderDetails").append("<li><span class='sendtoHtml'>" + newPizzaOrderPt2.pizzaToppingPrototype() + "<span><li>"); //send toppings to list
   $("ul#showOrderDetails").append("<li><span class='contact'>" + newContact.firstName + "</span></li>");
 
   $(".sendtoHtml").last().click(function() {
     $(this).hide().slideDown('slow'); //adding style
-    $("#showOrderDetails").show();
-    $("#showOrderDetails h4").text(newContact.firstName);
+    $("#show-order").show();
+    $("#show-order h4").text(newContact.firstName);
     $(".first-name").text(newContact.firstName);
     $(".last-name").text(newContact.lastName);
     $(".outputSize").text(newPizzaOrderPt1.size);
@@ -75,15 +83,7 @@ $(document).ready(function() {
 )};
 
 
-var checkboxes = document.getElementsByName('employee');////allows you to select multiple checkboxes
-var selected = [];
-for (var i=0; i<checkboxes.length; i++) {
-    if (checkboxes[i].checked == true) {
-        selected.push(checkboxes[i].value + ' ');
-    }
-}
-// if(userAnswer === "Pepperoni")
-//   push.Pepperoni
+
 
 
 
