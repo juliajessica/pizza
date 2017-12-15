@@ -8,11 +8,11 @@ function PizzaToppings(toppings) {
 // this.name = [];
 }
 
-PizzaSize.prototype.pizzaOrder = function() {
+PizzaSize.prototype.pizzaSizePrototype = function() {
   return this.size;
 }
 
-PizzaToppings.prototype.pizzaorder2 = function() {
+PizzaToppings.prototype.pizzaToppingPrototype = function() {
   return this.topping;
 }
 
@@ -27,19 +27,27 @@ $(document).ready(function() {
  $("form#pizzaForm").submit(function(event) {
    event.preventDefault();
 
-   var pizzaSizeInput = $("select#pizzaSize").val("");
+   var pizzaSizeInput = $("select#pizzaSize").val(""); //might not let me use select
 
-   var newPizzaOrderPt1 = new PizzaSize (pizzaSizeInput);
+   var newPizzaOrderPt1 = new PizzaSize(pizzaSizeInput);
 
    $("#toppingSelection").each(function() {
 
     var toppingInput = $(this).find("input#toppings").val();
 
-    var newPizzaOrderPt2 = new PizzaTopping (toppingInput);
+    var newPizzaOrderPt2 = new PizzaTopping(toppingInput);
     newPizzaOrderPt1.topping.push(newPizzaorderPt2);
   });
 
-  $()
+  $("#toppingSelection").remove(); //removes the users input
+  $("ul#showOrderDetails").append("<li><span class='sendtoHtml'>" + newPizzaOrderPt2.pizzaToppingPrototype() + "<span><li>"); //send toppings to list
+
+  $(".sendtoHtml").last().click(function() {
+    $(this).hide().slideDown('slow'); //adding style
+    $("")
+
+)};
+
 
 
 
