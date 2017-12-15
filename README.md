@@ -1,6 +1,6 @@
 # _Pizza Company_
 
-#### _Friday Project Assignment for Epicodus_
+#### _Friday Object-Oriented JavaScript Project for Epicodus_
 
 #### By _**Julia Sheremet**_
 
@@ -11,7 +11,7 @@ _This Pizza webpage is meant to display the use of BDD using constructors, and o
 ### Specs
 | Behavior | Input | Output |
 | :-------------     | :------------- | :------------- |
-| can return a random result | cheese | cheese |
+| can return a random result | "cheese" | "cheese" |
 | can can return specific behavior after selection is made | "pepperoni" | "pepperoni pizza" |
 | can return two separate results | "pepperoni" "large" | "large pepperoni pizza" |
 | can return result when total selection is made | "pepperoni" "mushrooms" "large" | "large mushroom pepperoni pizza" |
