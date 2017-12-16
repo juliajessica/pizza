@@ -12,7 +12,7 @@
       <div class="jumbotron">
         <h1>Pip's Pies</h1>
       </div>
-        <h3 id="orderh3">Place your order:</h3>
+        <h3 id="orderh3">Welcome to Pip's Pies! Place your order below.</h3>
       </br>
       <div class="row">
         <form id="pizzaForm">
@@ -33,10 +33,10 @@
                 <option value="Family-Size">Family-Size</option>
               </select>
           </div><!--close column-->
-          <br>
         </br>
           <div class="col-lg-12" id="toppingSelection">
             <h4>Choose your toppings:</h4>
+          </br>
             <label for="pepperoni">Pepperoni &ensp;</label>
             <input type="checkbox" name="userToppingChoice" value="Pepperoni" name="action">&emsp;
             <label for="meatballs">Meatballs &ensp;</label>
@@ -49,20 +49,24 @@
             <input type="checkbox" name="userToppingChoice" value="GrilledOnions" name="action">&emsp;
             <label for="blackolives">Black Olives &ensp;</label>
             <input type="checkbox" name="userToppingChoice" value="BlackOlives" name="action">&emsp;
-          <p></p>
-          <button type="submit" class="btn btn-warning">Place My Order!</button>
+            <label for="spinach">Spinach &ensp;</label>
+            <input type="checkbox" name="userToppingChoice" value="Spinach" name="action">&emsp;
+            <label for="extracheese">Extra Cheese &ensp;</label>
+            <input type="checkbox" name="userToppingChoice" value="ExtraCheese" name="action">&emsp;
+          </br>
+          <center><img class="resize" src="img/p.png" alt="image of pizza" id="pizzabutton"></center>
+          </br><center>Place My Order!</center>
+          <!-- <button type="submit" class="btn btn-warning">Place My Order!</button> -->
           </div><!--close column-->
         </form><!--close form-->
-        <p></p>
-        <h3>Click below to check your order details:</h3>
+        </br>
+        <p id="h3OrderDetails" class="small-caps">Click below to check your order details:</p>
         <ul id="showOrderDetails">
         </ul>
       </div><!--close row-->
       <div class="col-lg-12">
         <div id="show-order">
-          <h3>Confirm Order Details:</h3>
-            <h4></h4>
-      <!-- <li> for name-->
+          <p class="small-caps text">Confirm Order Details:</p>
             <li>Size: <span class="outputSize"></span></li>
             <li>Toppings: <span class="outputToppings"><span></li>
             <li>Price $<strong><span class="price"></strong></li>

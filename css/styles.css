@@ -3,22 +3,44 @@
   text-align: center;
   background-image: url("http://tocadamangava.com.br/wp-content/uploads/2015/08/pizza.jpg");
   color: white;
-  font-size: 250%;
+  font-size: 30px;
+  font-size: 14px;
 }
 
 body {
   padding: 20px;
+  background-color: #b8babc
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 60px;
   font-family: monospace;
+  font-weight: bold;
+}
+
+#orderh3 {
+  text-align: center;
+  font-style: italic;
 }
 
 #h3OrderDetails {
-  font-size: 40px;
+  font-size: 27px;
   margin: 10px;
 }
+
+p.small-caps {
+ font-variant-caps: small-caps;
+ font-style: italic;
+ }
+
+ .text {
+  font-size: 20px;
+  text-shadow: 2px 2px #afb7a1
+ }
+
+ label {
+   font-size: 18px;
+ }
 
 #toppings {
    font-size: 17px;
@@ -29,9 +51,14 @@ h1 {
    background-color: #afb7a1
  }
 
-.btn {
+/*.btn {
   padding: 10px;
   border: 10px;
+}*/
+
+img.resize {
+  width:200px;
+  height:auto;
 }
 
 .sendtoHtml {

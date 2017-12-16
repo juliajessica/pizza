@@ -55,15 +55,19 @@ $(document).ready(function() {
     // }
     var orderfinal = newPizzaOrder.pizzaOptionsPrototype();
     $("#showOrderDetails").show();
-    debugger;
     $("#showOrderDetails").append("your price is: " + "$" + orderfinal);
-    $(".sendtoHtml").last().click(function() {
-    $("#showOrderDetails").fadeIn();
-    // $("#showOrderDetails h4").text("newPizzaOrder.size");
-    $(".outputSize").text(newPizzaOrder.size);
-    $(".outputToppings").text(newPizzaOrder.topping);
-    $(".price").text(finalPrice);
 
+    $(".sendtoHtml").last().click(function() {
+      $("#showOrderDetails").fadeIn();
+      $(".outputSize").text(newPizzaOrder.size);
+      $(".outputToppings").text(newPizzaOrder.topping);
+      $(".price").text(finalPrice);
+
+      $("#pizzabutton").click(function(event) {
+        event.preventDefault();
+        orderfinal = new PizzaOptions();
+        $("#showOrderDetails").append(orderfinal);
+      });
     });
   }); //close submit function
 }); //close document ready function
