@@ -35,7 +35,6 @@ $(document).ready(function() {
 
     var pizzaSizeInput = $("#pizzaSize").val();
     var toppingInput = $("input[name=userToppingChoice]:checked").val();
-    // var toppingInput = $(this).find("input#toppings").val();
     var newPizzaOrder = new PizzaOptions(pizzaSizeInput, toppingInput);
     var finalPrice = newPizzaOrder.pizzaOptionsPrototype();
     $("ul#showOrderDetails").append("<li><span class='sendtoHtml'>" + newPizzaOrder.size + "<span></li>");
@@ -49,12 +48,6 @@ $(document).ready(function() {
       $(".outputSize").text(newPizzaOrder.size);
       $(".outputToppings").text(newPizzaOrder.topping);
       $(".price").text(finalPrice);
-
-      // $("#pizzabutton").click(function(event) {
-      //   event.preventDefault();
-      //   newPizzaOrder = new PizzaOptions();
-      //   $("#showOrderDetails").append(newPizzaOrder.size + newPizzaOrder.topping);
-      // });
     });
-  }); //close submit function
-}); //close document ready function
+  });
+});

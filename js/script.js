@@ -83,10 +83,30 @@ $(document).ready(function(event) {
 // )};
 
 
+//-------------------------------
 
+ //talk to perry about this - image button and adding names
 
+//html
+// <center><img class="resize" src="img/p.png" alt="image of pizza" id="pizzaButton"></center> -->
+// <!-- </br>
+// <center>Place My Order!</center>
 
+//js
+// $("#pizzabutton").click(function(event) {
+//   event.preventDefault();
+//   newPizzaOrder = new PizzaOptions();
+//   $("#showOrderDetails").append(newPizzaOrder.size + newPizzaOrder.topping);
+// });
 
+// <div class="first-name-form">
+//   <label for="first-name">First Name:</label>
+//   <input type="text" class="form-control" id="first-name">
+// </div>
+// <div class="last-name-form">
+//   <label for="first-name">Last Name:</label>
+//   <input type="text" class="form-control" id="first-name">
+// </div>
 
 
 
