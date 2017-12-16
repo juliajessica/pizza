@@ -39,7 +39,7 @@ p.small-caps {
  }
 
  label {
-   font-size: 18px;
+   font-size: 16px;
  }
 
 #toppings {
@@ -48,13 +48,8 @@ p.small-caps {
 
  #showOrderDetails {
    display: none;
-   background-color: #afb7a1
+   background-color: #c19178
  }
-
-/*.btn {
-  padding: 10px;
-  border: 10px;
-}*/
 
 img.resize {
   width:200px;
@@ -74,3 +69,6 @@ li {
   font-weight: bold;
   margin-left: 25px;
 }
+ .resize {
+   /*margin-left: 230px;*/
+ }
