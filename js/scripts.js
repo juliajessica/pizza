@@ -48,8 +48,6 @@ $(document).ready(function() {
     $("#showOrderDetails").show();
     $("#showOrderDetails").append("your price is: " + "$" + finalPrice);
 
-    // var orderfinal = newPizzaOrder.pizzaOptionsPrototype();
-
       $(".sendtoHtml").last().click(function() {
       $("#showOrderDetails").fadeIn();
       $(".outputSize").text(newPizzaOrder.size);
@@ -58,22 +56,3 @@ $(document).ready(function() {
     });
   });
 });
-
-
-//   if(this.topping === "Pepperoni" || this.topping === "Meatballs") {
-//     var chosenToppings = meat;
-//   } else {
-//     var chosenToppings = veggie;
-//   }
-//   if(this.size === "Family-Size") {
-//     var chosenToppings = meat;
-//   } else {
-//     var chosenToppings = veggie;
-//   }
-//   if(this.size === "Family-Size" && this.topping === "Pepperoni" || this.size === "Family-Size" && this.topping === "Meatballs") {
-//     var chosenToppings = xlmeat;
-//   } else {
-//     var chosenTopping = veggie;
-//   }
-//   return chosenToppings;
-// }
